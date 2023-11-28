@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "R Notebook"
 output: html_notebook
@@ -33,3 +34,16 @@ if(x>10){
     print("5 is smaller than 10")
 }
 ```
+=======
+
+# Define the two numbers
+num1 <- 5
+num2 <- 10
+
+# Calculate the sum
+sum <- num1 + num2
+
+# Print the result
+print(sum)
+
+>>>>>>> 9ed847ef33aa8adee0d1428d9bf07d78f6a445c1
