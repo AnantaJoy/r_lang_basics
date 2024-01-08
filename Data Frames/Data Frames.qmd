@@ -1,0 +1,97 @@
+## Create Data Frames
+
+-   length
+
+-   dimensions
+
+-   প্রোগ্রামিং
+
+```{r}
+# Sample student data
+student_data <- data.frame(
+  Name = c("John Doe", "Jane Smith", "Bob Johnson", "Alice Williams"),
+  ID = c(101, 102, 103, 104),
+  Age = c(20, 22, 21, 23),
+  Email = c("john@example.com", "smith@example.com", "johnson@example.com", "alice@example.com"),
+  Contact = c("123-456-7890", "987-654-3210", "456-789-0123", "789-012-3456"),
+  CGPA = c(3.65, 3.02, 2.8, 3.26),
+  Major = c("Computer Science", "Mathematics", "Physics", "Chemistry")
+)
+
+# Display the created data frame
+print(student_data)
+
+```
+
+-   head()
+
+    ```{r}
+    head(student_data, n=3)
+
+    ```
+
+-   tail()
+
+    ```{r}
+    tail(student_data, n=2)
+
+    ```
+
+-   names()
+
+    ```{r}
+    names(student_data)
+
+    ```
+
+-   dim()
+
+    ```{r}
+    dim(student_data)
+
+    ```
+
+-   str()
+
+    ```{r}
+    str(student_data)
+    ```
+
+-   summary()
+
+    ```{r}
+    summary(student_data)
+    ```
+
+## Analyze and Manipulating Data Frames
+
+#### Access elements
+
+-   `[[]]` or `$`
+
+```{r}
+student_data$Name
+```
+
+```{r}
+student_data[["Name"]][1:3]
+```
+
+| `[]` &rarr;  create a data frame
+| `[[]]` &rarr; create a vector
+
+```{r}
+student_data[1][,1]
+```
+
+## Updating Data Frames
+
+```{r}
+
+```
+
+## External Packages
+
+```{r}
+
+```

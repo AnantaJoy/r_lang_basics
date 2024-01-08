@@ -1,0 +1,164 @@
+### Vectors
+
+#### Creating Vectors
+
+```{r}
+num1 <- c(1:10);
+num2 <- seq(1, 10, by=2);
+num3 <- rep(c(2,3,4), 3)
+print(num1)
+print(num2)
+print(num3)
+print(typeof(num1))
+print(typeof(num2))
+print(typeof(num3))
+
+```
+
+#### scan()
+
+```{r}
+inp <- scan()
+print(inp)
+```
+
+#### Length()
+
+```{r}
+name <- c("Bangladesh","India")
+print(is.vector(name))
+print(length(name))
+```
+
+#### Manipulating
+
+-   Indexing
+
+    ```{r}
+
+    ```
+
+-   Ordering
+
+-   Sorting
+
+#### Operations
+
+-   Arithmetic
+
+    ```{r}
+    ```
+
+-   Logical
+
+    ```         
+    ```
+
+-   Relational
+
+    ```{r}
+    ```
+
+    ```{r}
+      
+    ```
+
+-   Assignment
+
+    ```{r}
+    ```
+
+-   Miscellaneous
+
+    ```{r}
+    ```
+
+#### Coercion
+
+-   Implicit
+
+    ```{r}
+
+    ```
+
+-   Explicit
+
+    ```{r}
+
+    ```
+
+### Sets
+
+```{r}
+set1 <- c(3:10)
+set2 <- c(2:7)
+```
+
+-   Union
+
+    ```{r}
+    union(set1, set2)
+    ```
+
+-   Intersection
+
+    ```{r}
+    intersect(set1, set2)
+    ```
+
+-   Difference
+
+-   Equal
+
+-   
+
+### Factors
+
+Categorical data
+
+```{r}
+
+```
+
+### Arrays
+
+```{r}
+
+```
+
+### Matrices
+
+```{r}
+
+```
+
+-   Creating matrix
+
+    ```{r}
+    mat <- matrix(1:10, nrow = 3, byrow = TRUE)
+    mat
+    ```
+
+    ```{r}
+    # length of matrix
+    length(mat)
+    typeof(mat)
+    is.matrix(mat)
+    dim(mat)
+    ```
+
+    ```{r}
+    a <- c(1:5)
+    b <- c(5:10)
+    cmat <- cbind(a, b)
+    cmat
+    ```
+
+    ```{r}
+    cmat <- rbind(a, b)
+    cmat
+    ```
+
+    ```{r}
+    diag(5)
+    ```

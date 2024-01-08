@@ -1,0 +1,61 @@
+```{r}
+intake.pre <- c(5462,5455,5346,6544,6536,5563,5643,6456)
+intake.post <- c(5365,6538,5674,6575,5652,6545,6542,5453)
+mylist <- list(before = intake.pre, after = intake.post)
+mylist
+```
+
+```{r}
+mylist$before
+```
+
+```{r}
+d <- data.frame(intake.pre, intake.post)
+d
+
+```
+
+### Indexing
+
+```{r}
+intake.pre[c(3,6,7)]
+```
+
+```{r}
+index <- c(3,6,7)
+intake.pre[index]
+```
+
+```{r}
+intake.post[1:5]
+```
+
+```{r}
+# negative indexing
+n_index <- -c(2,3,4)
+intake.post[n_index]
+```
+
+### Conditional Selection
+
+```{r}
+intake.post[intake.pre>6000]
+```
+
+### Indexing of data frame
+
+```{r}
+d 
+```
+
+```{r}
+d[3,2]
+```
+
+```{r}
+d[,2]
+```
+
+```{r}
+d[d$intake.pre>6000,]
+```

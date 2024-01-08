@@ -1,0 +1,24 @@
+```{r}
+data <- read.csv("./lex.csv")
+View(data)
+```
+
+```{r}
+data1 <- read.csv(file.choose(), header = T)
+data1
+```
+
+### Read Excel File
+
+```{r}
+# install.packages("readxl")
+library(readxl)
+file_path <- "./pop.xlsx"
+excel1 <- read_excel(file_path)
+excel1
+```
+
+```{r}
+# dimensions of data
+dim(excel1)
+```

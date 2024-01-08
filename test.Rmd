@@ -1,49 +1,25 @@
-<<<<<<< HEAD
----
-title: "R Notebook"
-output: html_notebook
----
-
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code.
-
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*.
-
 ```{r}
+# get working directory
+getwd()
 ```
 
 ```{r}
+# set working directory
+setwd("~/Desktop/r_lang_basics")
+```
+
+```{r}
+# save a workspace
+save.image("test.RData")
+```
+
+```{r}
+# load a workspace
+load("~/Desktop/r_lang_basics/test.RData")
 
 ```
 
 ```{r}
-plot(cars)
+# clear a workspace
+rm(list = ls())
 ```
-
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
-
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
-
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
-
-```{r}
-x <- 5
-
-if(x>10){
-    print("5 is greater than 10")
-}else{
-    print("5 is smaller than 10")
-}
-```
-=======
-
-# Define the two numbers
-num1 <- 5
-num2 <- 10
-
-# Calculate the sum
-sum <- num1 + num2
-
-# Print the result
-print(sum)
-
->>>>>>> 9ed847ef33aa8adee0d1428d9bf07d78f6a445c1

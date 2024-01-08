@@ -1,0 +1,18 @@
+**Lists:** collections of data of different data types. Lists are used to store multiple values in a single variable. Lists are created using the list() function. Lists are mutable, which means they can be modified after they are created.
+
+```{r}
+names <- c('A', 'B', 'C', 'D','E','F','G','H');
+ages <- c(43,21,23,45,67,76,54,43);
+weights <- c(76,56,78,76,56,78,66, 75);
+
+users_info <- rbind(names, ages, weights)
+users_list <- list(names, users_info)
+str(users_info)
+users_list
+
+
+```
+
+```{r}
+users_list[[2]][10:12]
+```

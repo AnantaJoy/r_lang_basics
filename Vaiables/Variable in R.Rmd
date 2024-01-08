@@ -1,0 +1,14 @@
+```{r}
+age <- c(45,67,65,43,22,34,45)
+class(age)
+```
+
+### Factor()
+
+```{r}
+temp <- c("High", "Medium","High","Low", "Low", "Medium")
+
+temp_factor <- factor(temp, order= T, 
+                      levels = c("Low", "Medium", "High"))
+temp_factor
+```

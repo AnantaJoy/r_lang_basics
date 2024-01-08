@@ -1,0 +1,14 @@
+```{r}
+pain <- c(0,2,1,2,3,1,2)
+fpain <- factor(pain, levels = 0:3)
+levels(fpain) <- c("none", "mild", "medium", "severe")
+fpain
+```
+
+```{r}
+as.numeric(fpain)
+```
+
+```{r}
+levels(fpain)
+```

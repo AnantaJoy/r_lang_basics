@@ -1,0 +1,71 @@
+---
+---
+---
+
+```{r}
+bangladesh <- data.frame(
+    dist_name = c('Dhaka', 'Rajshahi', 'Sylhet', 'Chittagong', 'Khulna'),                        population = c(120000,80000,60000,90000,40000), 
+    avg_income = c(30000,20000,25000,28000,23000))
+bangladesh
+```
+
+```{r}
+str(bangladesh)
+```
+
+```{r}
+bangladesh$dist_name
+```
+
+```{r}
+bangladesh["dist_name"]
+```
+
+```{r}
+bangladesh[c(3:5), ]
+```
+
+```{r}
+bangladesh[c(3:5), c("dist_name", "avg_income")]
+```
+
+```{r}
+bangladesh <- rbind( bangladesh, data.frame(dist_name="Barishal", population=70000, avg_income=26000))
+bangladesh
+```
+
+```{r}
+bangladesh <- bangladesh[c(-7,-8), ]
+bangladesh
+```
+
+```{r}
+# adding column 
+bangladesh <- cbind(bangladesh, "area" = c(1000, 800, 700, 1200, 600, 700))
+bangladesh
+```
+
+```{r}
+ranks <- order(bangladesh$avg_income)
+ranks
+```
+
+```{r}
+bangladesh$avg_income
+```
+
+```{r}
+bangladesh[ranks, ]
+```
+
+```{r}
+write.csv(bangladesh, file = "./bangladesh.csv")
+```
+
+```{r}
+attach(bangladesh)
+```
+
+```{r}
+colMeans(bangladesh)
+```
